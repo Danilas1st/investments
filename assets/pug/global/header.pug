@@ -1,0 +1,45 @@
+header.header 
+	.section_in 
+		.header_main
+			.header_menu 
+				nav.header_nav.link-hover
+					ul
+						-
+							let nav = [
+								{
+									name: 'О нас', 
+									link: '#'
+								},
+								{
+									name: 'Для инвесторов', 
+									link: '#'
+								},
+								{
+									name: 'Для получателей', 
+									link: '#'
+								},
+								{
+									name: 'Документы', 
+									link: '#'
+								},
+								{
+									name: 'Вакансии', 
+									link: '#'
+								},
+								{
+									name: 'Отзывы', 
+									link: '#'
+								},
+								{
+									name: 'Контакты', 
+									link: '#'
+								},
+							]
+						each item in nav
+							li 
+								a(href=item.link class="dark")=item.name
+			.header_mobil
+				+icon("call")
+				a(href="#" class="blue")
+					p +7 000 000 00 00
+				

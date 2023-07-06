@@ -1,0 +1,51 @@
+.header {
+	background: rgba(34, 72, 146, 0.06);
+}
+.section_in {
+}
+.header_main {
+	display: flex;
+	align-items: center;
+	padding: 3rem 0
+}
+.header_menu {
+	ul {
+		@include flex-center;
+	}
+}
+.header_nav {
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	li {
+		&:not(:last-child) {
+			margin-right: 6rem;
+		}
+		a {
+			font-family: $font_2;
+			font-size: 2rem;
+			@include accent-link;
+		}
+	}
+	margin-right: 7.4rem;
+}
+.link-hover {
+}
+.header_mobil {
+	display: flex;
+	align-items: center;
+	font-family: $font_3;
+	font-size: 2.4rem;
+	color: $blue;
+	a {
+		@include accent-link;
+		color: $blue;
+	}
+}
+.icon {
+}
+.icon-call {
+	margin-right: 1.5rem;
+}

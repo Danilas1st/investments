@@ -1,0 +1,276 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
+block content_block
+	section.hero 
+		.section_in 
+			.hero_main 
+				.hero_col_left 
+					.hero_head 
+						h1 Выгодные <span>условия</span><br> для заемщиков и кредиторов
+					.hero_sicial_list 
+						ul 
+							li 
+								.social_call 
+									a(href="#")
+										+icon("call")
+										p Позвонить
+							li 
+								.social_mail 
+									a(href="#") 
+										+icon("mail")
+										p Написать
+							li
+								.social_wh 
+									a(href="#") 
+										+icon("whatsapp")
+										p WhatsApp
+							li 
+								.social_tg 
+									a(href="#")
+										+icon("telegram")
+										p Telegram 
+							li 
+								.social_vib
+									a(href="#")
+										+icon("viber")
+										p Viber
+				.hero_col_right 
+					.hero_col_right_info 
+						h6 < 8 000 000 ₽
+						p Инвестировали с нами клиенты
+					.hero_col_right_img
+						img(src="i/herofoto.png", alt="")
+	section.about
+		.section_in 
+			.about_main 
+				.about_col_left 
+					.about_head 
+						h2 Мы — сервис для получения <span>финансирования</span> и инвестиционного <span>дохода.</span>
+					.about_img 
+						img(src="i/we.png", alt="")
+				.about_col_right
+					.about_col_right_txt 
+						p Найти и разместить инвестиции поможет «ХХХ»! С «ХХХ» возможно инвестирование собственных средств с доходностью 36% и даже больше! Не только Ваши средства, но и Ваши доходы могут быть обеспечены залогом имущества.
+						p «ХХХ» - Ваш надежный партнер для быстрого и удобного финансирования!
+						p С «ХХХ» Вы можете получить необходимое инвестирование за 1 день вне зависимости от кредитной истории, под залог авто или недвижимости. Наш сервис открыт как для физических лиц, так и для предпринимателей и бизнеса. Не теряйте время, позаботьтесь о своих финансах с «ХХХ» уже сегодня!
+					.about_col_right_btn 
+						button(type="button") Оставить заявку
+	section.work 
+		.section_in 
+			.work_main 
+				.work_head 
+					h2 Чем мы занимаемся
+				.work_list 
+					ul 
+						li
+							.work_list_img 
+								img(src="i/rectangle.png", alt="")
+							.work_list_head 
+								h6 Объединение людей
+							.work_list_txt 
+								p Мы объединяем людей, которым необходимо финансирование - физических и юридических лиц; финансовых специалистов и экспертов.
+						li
+							.work_list_img 
+								img(src="i/rectangle2.png", alt="")
+							.work_list_head 
+								h6 Программы для инвесторов
+							.work_list_txt 
+								p Мы предлагаем наиболее удобные способы инвестиционной деятельности, исходя из предпочтений и возможностей инвесторов.
+						li
+							.work_list_img 
+								img(src="i/rectangle3.png", alt="")
+							.work_list_head 
+								h6 Финансирование клиентов
+							.work_list_txt 
+								p Мы помогаем нашим клиентам получить необходимые деньги даже с плохой кредитной историей под залог недвижимости или автотранспорта.
+	section.for_investors
+		.section_in 
+			.for_investors_main
+				.for_investors_col_left 
+					.for_investors_head 
+						h2 Для инвесторов
+					.for_investors_txt 
+						p Инвесторам «ХХХ» предлагает возможность получить прибыль в разы больше, чем на банковских депозитах.
+						p Безопасность инвестиций и дохода обеспечивает залог, а условия инвестирования и получателя инвестиций Вы выбираете сами!
+						p Инвестируйте выгодно с «ХХХ»!
+					.for_investors_btn 
+						button(type="button") Узнать подробнее
+				.for_investors_col_right 
+					.for_investors_img 
+						img(src="i/for.png", alt="")
+	section.earn 
+		.section_in 
+			.earn_main 
+				.earn_head
+					h2 Как зарабатывать с нами?
+				.earn_list 
+					ul 
+						li 
+							.earn_img 
+								img(src="i/pencil.png", alt="")
+							.earn_txt 
+								h6 Свяжитесь с нами
+							.earn_info 
+								p Оставьте заявку на сайте или свяжитесь с нами любым удобным для вас способом.
+						li 
+							.earn_img 
+								img(src="i/handshake.png", alt="")
+							.earn_txt 
+								h6 Обговорите условия
+							.earn_info 
+								p Сформируйте условия, на которых вы готовы вкладывать денежные средства.
+						li 
+							.earn_img 
+								img(src="i/coins.png", alt="")
+							.earn_txt 
+								h6 Получайте заявки
+							.earn_info 
+								p Получайте заявки на финансирование и выдвигайте условия кредитования.
+						li 
+							.earn_img 
+								img(src="i/bell.png", alt="")
+							.earn_txt 
+								h6 Получайте доход
+							.earn_info 
+								p Выходите с нашей помощью на выгодные сделки и получайте ежемесячный доход.
+	sction.registration 
+		.section_in 
+			.registration_main 
+				.registration_head 
+					h2 Регистрируйтесь в нашем чат-боте
+					p И получайте заявки на финансирование.
+				.registration_content 
+					.registration_tg
+						a(href="#")
+							+icon("telegram")
+					p @НазваниеБота
+	section.recipients
+		.section_in 
+			.recipients_main 
+				.recipients_col_left 
+					.recipients_col_left_img 
+						img(src="i/for2.png", alt="")
+				.recipients_col_right 
+					.recipients_col_right_head 
+						h2 Для получателей инвестиций
+					.recipients_col_right_info 
+						p Получите необходимое инвестирование быстро и удобно с «ХХХ»!
+						p Мы помогаем привлечь инвестиции под залог имущества даже при наличии плохой кредитной истории. С «ХХХ» возможно получить деньги всего за 1 день!
+						p Без лишних сложностей, длительного ожидания, независимо от ситуации клиента найти лучшие предложения – задача «ХХХ»!
+					.recipients_col_right_btn 
+						button(type="button") Получить финансирование
+	section.certificate
+		.section_in 
+			.certificate_main 
+				.certificate_head 
+					h2 Документы и сертификаты
+					.certificate_slider_nav 
+						.certificate_slider_btn_prewios 
+							button(type="button")
+								+icon('prew')
+						.certificate_slider_btn_next 
+							button(type="button")
+								+icon('next')
+				.certificate_slider_w
+					.certificate_slider.swiper
+						.swiper-wrapper
+							-for(i = 0; i < 10; i++)
+								.swiper-slide 
+									.certificate_slide_img
+										a(href="i/certificate/certificate1.png" data-fancybox="img") 
+											img(src="i/certificate/certificate1.png", alt="")
+	section.form 
+		.section_in 
+			.form_main 
+				.form_head 
+					h2 Выгодные инвестиции и моментальное финансирование
+					p Оставляйте заявку, чтобы узнать подробнее об условиях сотрудничества.
+				form.form_form
+					.form_top
+						.form_form_input
+							input(type="text" placeholder="Ваше имя")
+						.form_form_input
+							input(type="tel" placeholder="Ваш телефон")
+						.form_form_btn 
+							button(type="submit") Отправить
+					.form_form_bottom
+						.form_policy!='Отправляя форму, вы соглашаетесь с <a href="#"> политикой конфиденциальности.</a>'
+	section.vacation 
+		.section_in 
+			.vacation_main 
+				.vacation_head 
+					h2 Вакансии
+				.vacation_list 
+					ul 
+						-for(i = 0; i < 3; i++)
+							li 
+								.vacation_img 
+									img(src="i/vacansion.png", alt="")
+								.vacation_name 
+									h6 Начинающий специалист
+								.vacation_btn 
+									button(type="button") Откликнуться
+										+icon("arrowbtn")
+	section.reviews
+		.section_in 
+			.reviews_main 
+				.reviews_head 
+					h2 Что говорят клиенты
+					.reviews_slider_nav 
+						.reviews_slider_btn_prewios 
+							button(type="button")
+								+icon('prew')
+						.reviews_slider_btn_next 
+							button(type="button")
+								+icon('next')
+				.reviews_slider_w
+					.reviews_slider.swiper_rev 
+						.swiper-wrapper
+							-for(i = 0; i < 8; i++)
+								.swiper-slide 
+									.reviews_slide.showMoreBlock
+										.reviews_top 
+											.reviews_slide_head
+												h3 Имя Фамилия
+												p Клиент
+										.reviews_slide_txt.showMoreTxt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										.reviews_btn_more.showMoreBtn
+											p Показать больше
+	section.contact 
+		.section_in 
+			.contact_main 
+				.contact_col_left 
+					.contact_head 
+						h2 Наши контакты
+					.contact_mobil 
+						+icon("call")
+						a(href="#" class="blue")
+							p +7 000 000 00 00
+					.contact_mail 
+						+icon("mail")
+						a(href="#" class="blue")
+							p mail@mail.ru
+					.contact_social_list 
+						ul 
+							li 
+								.contact_social_wh 
+									a(href="#")
+										+icon("whatsapp") 
+							li 
+								.contact_social_tg
+									a(href="#")
+										+icon("telegram") 
+							li 
+								.contact_social_vib
+									a(href="#")
+										+icon("viber") 
+				.contact_col_right 
+					img(src="i/contact.png", alt="")
+
+
+
+	

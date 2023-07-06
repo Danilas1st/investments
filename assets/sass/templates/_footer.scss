@@ -1,0 +1,23 @@
+.footer {
+	background: $blue;
+}
+.section_in {
+}
+.footer_main {
+	padding: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer_licence {
+	color: $white;
+	font-size: 2rem;
+}
+.footer_policy {
+	a {
+		color: $white;
+		font-size: 2rem;
+	}
+}
+.footer_arkada {
+}
