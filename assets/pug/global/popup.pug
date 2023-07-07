@@ -14,3 +14,32 @@
 			.popup_form_btn 
 				button(type="submit") Отправить
 			.popup_policy!='Отправляя форму, вы соглашаетесь с <a href="#"> политикой конфиденциальности</a>.'
+
+
+
+
+.popup.popup_menu(data-id="menu")
+	.popup_form_bg_m.close_popups.remove 
+	.popup_form_m
+		.popup_close_m.close_popups.remove 
+			button(type="button")
+				+icon('close')
+		.popup_menu 
+			ul 
+				li 
+					a(href="#" class="remove") О нас
+				li 
+					a(href="#" class="remove") Для инвесторов
+				li 
+					a(href="#" class="remove") Для получателей
+				li 
+					a(href="#" class="remove") Документы
+				li 
+					a(href="#" class="remove") Вакансии
+				li 
+					a(href="#" class="remove") Отзывы
+				li 
+					a(href="#" class="remove") Контакты
+		.popup_info
+			.popup_tel
+				a(href="#" class="remove") +7 000 000 00 00

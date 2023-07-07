@@ -8,16 +8,31 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	@include bp($point_5) {
+		flex-direction: column;	
+	}
 }
 .footer_licence {
 	color: $white;
 	font-size: 2rem;
+	@include bp($point_4) {
+		font-size: 1.6rem;		
+	}
+	@include bp($point_5) {
+		margin-bottom: 1.5rem;	
+	}
 }
 .footer_policy {
 	a {
 		color: $white;
 		font-size: 2rem;
 		@include accent-link;
+		@include bp($point_4) {
+			font-size: 1.6rem;	
+		}
+	}
+	@include bp($point_5) {
+		margin-bottom: 1.5rem;	
 	}
 }
 .footer_arkada {

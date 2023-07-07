@@ -6,11 +6,17 @@
 .header_main {
 	display: flex;
 	align-items: center;
-	padding: 3rem 0
+	padding: 3rem 0;
+	@include bp($point_2) {
+		justify-content: right
+	}
 }
 .header_menu {
 	ul {
 		@include flex-center;
+	}
+	@include bp($point_2) {
+		display: none;
 	}
 }
 .header_nav {
@@ -43,9 +49,45 @@
 		@include accent-link;
 		color: $blue;
 	}
+	@include bp($point_2) {
+		display: none;
+	}
 }
 .icon {
 }
 .icon-call {
 	margin-right: 1.5rem;
+}
+.burger_trigger {
+	width: 3rem;
+	height: 2rem;
+	position: relative;
+	display: none;
+	@include bp($point_2) {
+		display: block;
+	}
+	@include bp($point_5) {
+		height: 1.8rem;
+	}
+	span {
+		display: flex;
+		width: 100%;
+		height: .3rem;
+		background-color: $blue;
+		position: absolute;
+		top: 0;
+		right: 0;
+		pointer-events: none;
+		border-radius: 1rem;
+		&:nth-child(2) {
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+		}
+		&:nth-child(3) {
+			top: auto;
+			bottom: 0;
+			width: 100%;
+		}
+	}
 }

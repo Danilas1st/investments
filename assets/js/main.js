@@ -191,6 +191,10 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.certificate_slider_btn_next',
     prevEl: '.certificate_slider_btn_prewios',
   },
+	pagination: {
+    el: '.swiper_pagination',
+    type: 'bullets',
+  },
 });
 
 
@@ -214,6 +218,10 @@ const swiper_rev = new Swiper('.swiper_rev', {
 	navigation: {
     nextEl: '.reviews_slider_btn_next',
     prevEl: '.reviews_slider_btn_prewios ',
+  },
+	pagination: {
+    el: '.swiper_pagination',
+    type: 'bullets',
   },
 });
 
