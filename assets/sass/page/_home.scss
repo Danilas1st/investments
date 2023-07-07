@@ -225,7 +225,7 @@
 	margin-bottom: 4.5rem;
 }
 .about_col_right_btn {
-	button {
+	button, input[type="submit"]  {
 		padding: 2.4rem 4rem;
 		font-size: 2.2rem;
 		color: $blue;
@@ -298,7 +298,7 @@
 	}
 }
 .for_investors_btn {
-	button {
+	button, input[type="submit"]  {
 		padding: 2.4rem 4rem;
 		font-size: 2.2rem;
 		color: $blue;
@@ -471,7 +471,7 @@
 	}
 }
 .recipients_col_right_btn {
-	button {
+	button, input[type="submit"]  {
 		padding: 2.4rem 4rem;
 		font-size: 2.2rem;
 		color: $blue;
@@ -513,7 +513,7 @@
 	align-items: center;
 }
 .certificate_slider_btn_prewios {
-	button {
+	button, input[type="submit"]  {
 		background: rgb(70, 0, 220, 0.1);
 		border-radius: 1rem;
 		display: flex;
@@ -528,7 +528,7 @@
 	color: $blue;
 }
 .certificate_slider_btn_next {
-	button {
+	button, input[type="submit"]  {
 		background: rgb(70, 0, 220, 0.1);
 		border-radius: 1rem;
 		display: flex;
@@ -542,7 +542,7 @@
 	fill: $blue;
 }
 .swiper-button-disabled {
-	button {
+	button, input[type="submit"]  {
 		background: rgb(48, 48, 48, 0.1);
 		.icon {
 			fill: $white;
@@ -618,7 +618,7 @@
 }
 .form_form_btn {
 	margin-left: 1.5rem;
-	button {
+	button, input[type="submit"]  {
 		padding: 2.3rem 8.7rem;
 		font-size: 2.2rem;
 		color: $white;
@@ -633,10 +633,36 @@
 .form_policy {
 	color: $white;
 	a {
+		@include accent-link;
 		color: $white;
 	}
 }
 .vacation {
+	position: relative;
+	&:before {
+		position: absolute;
+		content: '';
+		width: 57rem;
+		height: 59rem;
+		bottom: -26rem;
+		right: 0;
+		background: rgba(118, 42, 215, 0.10);
+		filter: blur(15rem);
+		border-radius: 50rem;
+		z-index: -1;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		width: 33rem;
+		height: 35rem;
+		bottom: -15rem;
+		right: 11rem;
+		background: rgba(42, 163, 215, 0.25);
+		filter: blur(5rem);
+		border-radius: 35rem;
+		z-index: -1;
+	}
 }
 .vacation_main {
 }
@@ -661,7 +687,7 @@
 	}
 }
 .vacation_btn {
-	button {
+	button, input[type="submit"]  {
 		font-size: 2.2rem;
 		color: $blue;
 	}
@@ -685,7 +711,7 @@
 	align-items: center;
 }
 .reviews_slider_btn_prewios {
-	button {
+	button, input[type="submit"]  {
 		background: rgb(70, 0, 220, 0.1);
 		border-radius: 1rem;
 		display: flex;
@@ -697,7 +723,7 @@
 	}
 }
 .reviews_slider_btn_next {
-	button {
+	button, input[type="submit"]  {
 		background: rgb(70, 0, 220, 0.1);
 		border-radius: 1rem;
 		display: flex;

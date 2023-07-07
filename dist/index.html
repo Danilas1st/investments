@@ -111,7 +111,7 @@
                   <p>С «ХХХ» Вы можете получить необходимое инвестирование за 1 день вне зависимости от кредитной истории, под залог авто или недвижимости. Наш сервис открыт как для физических лиц, так и для предпринимателей и бизнеса. Не теряйте время, позаботьтесь о своих финансах с «ХХХ» уже сегодня!</p>
                 </div>
                 <div class="about_col_right_btn"> 
-                  <button type="button">Оставить заявку</button>
+                  <button class="trigger" type="button" data-target="form">Оставить заявку</button>
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@
                   <p>Инвестируйте выгодно с «ХХХ»!</p>
                 </div>
                 <div class="for_investors_btn"> 
-                  <button type="button">Узнать подробнее</button>
+                  <button class="trigger" type="button" data-target="form">Узнать подробнее</button>
                 </div>
               </div>
               <div class="for_investors_col_right"> 
@@ -261,7 +261,7 @@
                   <p>Без лишних сложностей, длительного ожидания, независимо от ситуации клиента найти лучшие предложения – задача «ХХХ»!</p>
                 </div>
                 <div class="recipients_col_right_btn"> 
-                  <button type="button">Получить финансирование</button>
+                  <button class="trigger" type="button" data-target="form">Получить финансирование</button>
                 </div>
               </div>
             </div>
@@ -368,7 +368,7 @@
                       <h6>Начинающий специалист</h6>
                     </div>
                     <div class="vacation_btn"> 
-                      <button type="button">Откликнуться
+                      <button class="trigger" type="button" data-target="form">Откликнуться
                         <svg class="icon icon-arrowbtn ">
                           <use xlink:href="i/sprite/sprite.svg#arrowbtn"></use>
                         </svg>
@@ -381,7 +381,7 @@
                       <h6>Начинающий специалист</h6>
                     </div>
                     <div class="vacation_btn"> 
-                      <button type="button">Откликнуться
+                      <button class="trigger" type="button" data-target="form">Откликнуться
                         <svg class="icon icon-arrowbtn ">
                           <use xlink:href="i/sprite/sprite.svg#arrowbtn"></use>
                         </svg>
@@ -394,7 +394,7 @@
                       <h6>Начинающий специалист</h6>
                     </div>
                     <div class="vacation_btn"> 
-                      <button type="button">Откликнуться
+                      <button class="trigger" type="button" data-target="form">Откликнуться
                         <svg class="icon icon-arrowbtn ">
                           <use xlink:href="i/sprite/sprite.svg#arrowbtn"></use>
                         </svg>
@@ -627,7 +627,7 @@
               <p>© 2023 Все права защищены</p>
             </div>
             <div class="footer_policy"> <a href="#">Политика конфиденциальности</a></div>
-            <div class="footer_arkada"><a href="#"><img src="i/arkada.png" alt=""></a></div>
+            <div class="footer_arkada"><a class="white" href="#"><img src="i/arkada.png" alt=""></a></div>
           </div>
         </div>
       </footer>
@@ -640,6 +640,33 @@
     <script src="js/libs.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
+    <div class="popup popup_submit" data-id="form">
+      <div class="popup_form_bg close_popups remove"></div>
+      <div class="popup_form_w">
+        <div class="popup_close close_popups remove"> 
+          <button type="button">
+            <svg class="icon icon-close ">
+              <use xlink:href="i/sprite/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="popup_form_head"> 
+          <h3>Оставьте заявку</h3>
+        </div>
+        <form class="popup_form">
+          <div class="popup_form_input">
+            <input type="text" placeholder="Ваше имя">
+          </div>
+          <div class="popup_form_input">
+            <input type="tel" placeholder="Ваш телефон">
+          </div>
+          <div class="popup_form_btn"> 
+            <button type="submit">Отправить</button>
+          </div>
+          <div class="popup_policy">Отправляя форму, вы соглашаетесь с <a href="#"> политикой конфиденциальности</a>.</div>
+        </form>
+      </div>
+    </div>
     <div class="alert success">
       <div class="alert_main"> 
         <p>Ваше сообщение успешно отправлено!</p>

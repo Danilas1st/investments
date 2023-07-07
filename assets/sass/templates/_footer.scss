@@ -17,6 +17,7 @@
 	a {
 		color: $white;
 		font-size: 2rem;
+		@include accent-link;
 	}
 }
 .footer_arkada {

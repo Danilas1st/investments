@@ -1,0 +1,16 @@
+.popup.popup_submit(data-id="form")
+	.popup_form_bg.close_popups.remove
+	.popup_form_w
+		.popup_close.close_popups.remove 
+			button(type="button")
+				+icon('close')
+		.popup_form_head 
+			h3 Оставьте заявку
+		form.popup_form
+			.popup_form_input
+				input(type="text" placeholder="Ваше имя")
+			.popup_form_input
+				input(type="tel" placeholder="Ваш телефон")
+			.popup_form_btn 
+				button(type="submit") Отправить
+			.popup_policy!='Отправляя форму, вы соглашаетесь с <a href="#"> политикой конфиденциальности</a>.'
