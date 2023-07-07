@@ -556,6 +556,7 @@
 .swiper {
 }
 .swiper-wrapper {
+	height: auto!important;
 }
 .swiper-slide {
 }
@@ -736,6 +737,9 @@
 .reviews_slider_w {
 }
 .reviews_slider {
+	.swiper-wrapper {
+		height: auto!important;
+	}
 }
 .swiper_rev {
 }
