@@ -809,6 +809,9 @@
 			padding: 6rem;	
 		}
 	}
+	@include bp(821px) {
+		padding: 8rem 0 8rem 4rem;
+	}
 	@include bp($point_5) {
 		margin: 0;	
 		padding: 2rem;	
@@ -1066,19 +1069,15 @@
 	align-items: center;
 	margin-bottom: 2.5rem;
 	position: relative;
-	&:before {
-		position: absolute;
-		content: '';
-		width: 6rem;
-		height: 6rem;
-		background: url('../../i/reviews.png') center/cover no-repeat;
-		top: 50%;
-		transform: translateY(-50%);
-		left: -8rem;
-	}
 }
 .reviews_img {
-	
+	position: absolute;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -8rem;
 }
 .reviews_slide_head {
 	h3 {
